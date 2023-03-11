@@ -11,7 +11,7 @@ use ws2812_esp32_rmt_driver::driver::color::LedPixelColorGrbw32;
 use ws2812_esp32_rmt_driver::{LedPixelEsp32Rmt, RGB8};
 
 const LED_PIN: u32 = 8;
-const NUM_PIXELS: usize = 1; //1 pixel
+const NUM_PIXELS: usize = 1;
 
 fn main() -> ! {
     let mut ws2812 = LedPixelEsp32Rmt::<RGB8, LedPixelColorGrbw32>::new(0, LED_PIN).unwrap();
